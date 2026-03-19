@@ -48,6 +48,56 @@
   }
   </script>
 
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is NHK News Easy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NHK NEWS WEB EASY is a free service by Japan's public broadcaster that rewrites current news stories in simpler Japanese. Articles use basic kanji with furigana readings, shorter sentences, and common vocabulary — making it one of the best resources for Japanese reading practice at the beginner and intermediate level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Yomeru match NHK News Easy articles to my level?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yomeru compares your known vocabulary against the words in each NHK News Easy article. It calculates a comprehension percentage for every article, then ranks them so the easiest ones appear first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use my WaniKani vocabulary with NHK News Easy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Yomeru has built-in WaniKani integration. Click Import from WaniKani, enter your API token, and Yomeru will automatically pull in all the vocabulary and kanji you've learned."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What JLPT levels does Yomeru work for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NHK News Easy articles are generally aimed at JLPT N4–N3 level, but Yomeru's vocabulary matching works for any level from N5 to N1. It surfaces the simplest articles first based on your known words."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a free app to read NHK News Easy based on my vocabulary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yomeru is a free, open-source web app that recommends NHK News Easy articles based on your known Japanese vocabulary. It supports WaniKani import and works on any device with a browser."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -101,6 +151,57 @@
       <div id="pagination"></div>
     </section>
   </main>
+
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          <h3>Add Your Vocabulary</h3>
+          <p>Paste your known Japanese words, upload a vocabulary file, or connect your <strong>WaniKani</strong> account to automatically import all the kanji and vocabulary you've learned.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          <h3>Get Matched Articles</h3>
+          <p>Yomeru analyzes every article from the past year of <strong>NHK News Easy</strong> (NHK NEWS WEB EASY) and calculates how much of each article you can read based on your vocabulary.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          <h3>Read at Your Level</h3>
+          <p>Articles are sorted by difficulty so you always have something at the right level — whether you're preparing for <strong>JLPT N5</strong> or <strong>N1</strong>. Build reading confidence with real Japanese news.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>What is NHK News Easy?</summary>
+      <p><a href="https://www3.nhk.or.jp/news/easy/" target="_blank" rel="noopener">NHK NEWS WEB EASY</a> (NHKニュースウェブイージー) is a free service by Japan's public broadcaster that rewrites current news stories in simpler Japanese. Articles use basic kanji with furigana readings, shorter sentences, and common vocabulary — making it one of the best resources for Japanese reading practice at the beginner and intermediate level.</p>
+    </details>
+    <details>
+      <summary>How does Yomeru match articles to my level?</summary>
+      <p>Yomeru compares your known vocabulary against the words in each NHK News Easy article. It calculates a comprehension percentage for every article, then ranks them so the easiest ones (where you know the most words) appear first. This way you always have articles you can read with confidence.</p>
+    </details>
+    <details>
+      <summary>Can I use my WaniKani vocabulary?</summary>
+      <p>Yes! Yomeru has built-in WaniKani integration. Click "Import from WaniKani," enter your API token, and Yomeru will automatically pull in all the vocabulary and kanji you've learned. As you level up on WaniKani, just re-import to update your word list.</p>
+    </details>
+    <details>
+      <summary>What JLPT levels does this work for?</summary>
+      <p>NHK News Easy articles are generally aimed at JLPT N4–N3 level, but Yomeru's matching works for any level. If you're N5 it will surface the simplest articles, and if you're N2 or N1 you'll see that most articles are well within your reach. It's a great way to practice reading at any stage.</p>
+    </details>
+    <details>
+      <summary>Is Yomeru free?</summary>
+      <p>Yes, Yomeru is completely free and open source. Your vocabulary data stays in your browser — nothing is sent to any server. You can optionally <a href="https://ko-fi.com/pmdov" target="_blank" rel="noopener">support the project</a> if you find it useful.</p>
+    </details>
+  </section>
 
   <footer>
     <p>Articles sourced from <a href="https://www3.nhk.or.jp/news/easy/" target="_blank" rel="noopener">NHK NEWS WEB EASY</a>. Data updated daily.</p>
